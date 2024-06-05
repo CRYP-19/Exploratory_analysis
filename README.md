@@ -11,6 +11,9 @@
 
 ### Project Overview 
 I conducted an exploratory data analysis on races conducted in the USA in 2020, ages of the athletes, performances and the impact of seasons on their performance.
+
+![Gender distribution](https://github.com/CRYP-19/Exploratory_analysis/assets/78747034/76ba9b45-c4fd-4f52-8d10-55d75760c907)
+
 ### Data Source
 Data was obtained from https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running/discussion/420633
 ## Tool
@@ -40,6 +43,9 @@ Python [Download here](https://www.python.org/downloads/)
 15. spring 3-5
 16. summer 6-8
 17. fall 12-2
+
+
+![Athlete_age_speed_distribution](https://github.com/CRYP-19/Exploratory_analysis/assets/78747034/58e8cebd-90ff-429e-a163-a41c823f3c19)
 
 ### Data Analysis
 ```Python
