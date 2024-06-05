@@ -10,15 +10,19 @@
 - [References](#reference)
 
 ### Project Overview 
+---
+
 I conducted an exploratory data analysis on races conducted in the USA in 2020, ages of the athletes, performances and the impact of seasons on their performance.
 
 ![Gender distribution](https://github.com/CRYP-19/Exploratory_analysis/assets/78747034/76ba9b45-c4fd-4f52-8d10-55d75760c907)
 
 ### Data Source
+---
 Data was obtained from https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running/discussion/420633
 ## Tool
 Python [Download here](https://www.python.org/downloads/)
 ### Data cleaning/preparation
+---
 1. Filtering the data for only USA races
 2. Removed the blank spaces
 3. Renamed each column
@@ -26,6 +30,8 @@ Python [Download here](https://www.python.org/downloads/)
 5. Sort by 50km and 50mi
 
 ### Exploratory Analysis
+---
+
 1. Find two races a single athlete ran in 2020
 2. race_day
 3. race_name
@@ -48,6 +54,8 @@ Python [Download here](https://www.python.org/downloads/)
 ![Athlete_age_speed_distribution](https://github.com/CRYP-19/Exploratory_analysis/assets/78747034/58e8cebd-90ff-429e-a163-a41c823f3c19)
 
 ### Data Analysis
+---
+
 ```Python
 import pandas as pd
 import seaborn as sns
@@ -63,6 +71,8 @@ df3.groupby('race_season')['athlete_average_speed'].agg(['mean','count']).sort_v
 df3.query('race_length == "50mi"').groupby('race_season')['athlete_average_speed'].agg(['mean','count']).sort_values('mean', ascending = False)
 ```
 ### Findings
+---
+
 The results shows as follows:
 1. Athlete with ID 222509 age 23 ran two races in the US, a 50km and 50mi race at a top speed of 10.4mph for the 50km race and 8.7mph at the 50mi race
 2. Over 20,000 people ran the 50km race while less than 6000 ran the 50mi race
@@ -76,11 +86,15 @@ Summer	6.9mph
 This means athletes run faster in spring
 
 ### Recommendation
+---
+
 1. For races in the summer athletes should do their training in Africa where temperature is quite high
 2. Athletes training should be by 50miles in order to be ready for both 50km and 50mi races
 3. Sponsors should that are interested in building a brand around a race athlete should go for athletes between the ages of 20 to 28 years because that is when they hit their top speed
 
 ### Reference
+---
 - Ryan Nolan (https://www.youtube.com/watch?v=4sZFkPw87ng)
 - Raw datasets (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running/discussion/420633)
+  
 🤓
